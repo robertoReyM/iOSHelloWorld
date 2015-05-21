@@ -10,11 +10,12 @@
 		DD7FB66A1B0E76E100D9DC25 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7FB6691B0E76E100D9DC25 /* main.m */; };
 		DD7FB66D1B0E76E100D9DC25 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7FB66C1B0E76E100D9DC25 /* AppDelegate.m */; };
 		DD7FB6701B0E76E100D9DC25 /* hello.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DD7FB66E1B0E76E100D9DC25 /* hello.xcdatamodeld */; };
-		DD7FB6731B0E76E100D9DC25 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7FB6721B0E76E100D9DC25 /* ViewController.m */; };
+		DD7FB6731B0E76E100D9DC25 /* MainController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7FB6721B0E76E100D9DC25 /* MainController.m */; };
 		DD7FB6761B0E76E100D9DC25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD7FB6741B0E76E100D9DC25 /* Main.storyboard */; };
 		DD7FB6781B0E76E100D9DC25 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD7FB6771B0E76E100D9DC25 /* Images.xcassets */; };
 		DD7FB67B1B0E76E100D9DC25 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD7FB6791B0E76E100D9DC25 /* LaunchScreen.xib */; };
 		DD7FB6871B0E76E100D9DC25 /* helloTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7FB6861B0E76E100D9DC25 /* helloTests.m */; };
+		DD7FB6951B0E806400D9DC25 /* Declarations.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7FB6941B0E806400D9DC25 /* Declarations.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,14 +35,16 @@
 		DD7FB66B1B0E76E100D9DC25 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DD7FB66C1B0E76E100D9DC25 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		DD7FB66F1B0E76E100D9DC25 /* hello.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = hello.xcdatamodel; sourceTree = "<group>"; };
-		DD7FB6711B0E76E100D9DC25 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		DD7FB6721B0E76E100D9DC25 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DD7FB6711B0E76E100D9DC25 /* MainController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainController.h; sourceTree = "<group>"; };
+		DD7FB6721B0E76E100D9DC25 /* MainController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainController.m; sourceTree = "<group>"; };
 		DD7FB6751B0E76E100D9DC25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DD7FB6771B0E76E100D9DC25 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DD7FB67A1B0E76E100D9DC25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		DD7FB6801B0E76E100D9DC25 /* helloTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = helloTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD7FB6851B0E76E100D9DC25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD7FB6861B0E76E100D9DC25 /* helloTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = helloTests.m; sourceTree = "<group>"; };
+		DD7FB6931B0E806400D9DC25 /* Declarations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Declarations.h; sourceTree = "<group>"; };
+		DD7FB6941B0E806400D9DC25 /* Declarations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Declarations.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,10 +86,9 @@
 		DD7FB6661B0E76E100D9DC25 /* hello */ = {
 			isa = PBXGroup;
 			children = (
-				DD7FB66B1B0E76E100D9DC25 /* AppDelegate.h */,
-				DD7FB66C1B0E76E100D9DC25 /* AppDelegate.m */,
-				DD7FB6711B0E76E100D9DC25 /* ViewController.h */,
-				DD7FB6721B0E76E100D9DC25 /* ViewController.m */,
+				DD7FB6901B0E77DA00D9DC25 /* main */,
+				DD7FB6911B0E77E200D9DC25 /* controllers */,
+				DD7FB6921B0E77FB00D9DC25 /* customized */,
 				DD7FB6741B0E76E100D9DC25 /* Main.storyboard */,
 				DD7FB6771B0E76E100D9DC25 /* Images.xcassets */,
 				DD7FB6791B0E76E100D9DC25 /* LaunchScreen.xib */,
@@ -120,6 +122,33 @@
 				DD7FB6851B0E76E100D9DC25 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DD7FB6901B0E77DA00D9DC25 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				DD7FB66C1B0E76E100D9DC25 /* AppDelegate.m */,
+				DD7FB66B1B0E76E100D9DC25 /* AppDelegate.h */,
+				DD7FB6931B0E806400D9DC25 /* Declarations.h */,
+				DD7FB6941B0E806400D9DC25 /* Declarations.m */,
+			);
+			name = main;
+			sourceTree = "<group>";
+		};
+		DD7FB6911B0E77E200D9DC25 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DD7FB6721B0E76E100D9DC25 /* MainController.m */,
+				DD7FB6711B0E76E100D9DC25 /* MainController.h */,
+			);
+			name = controllers;
+			sourceTree = "<group>";
+		};
+		DD7FB6921B0E77FB00D9DC25 /* customized */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = customized;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,6 +200,7 @@
 				TargetAttributes = {
 					DD7FB6631B0E76E100D9DC25 = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = 3D6T7V58KY;
 					};
 					DD7FB67F1B0E76E100D9DC25 = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -224,8 +254,9 @@
 			files = (
 				DD7FB66D1B0E76E100D9DC25 /* AppDelegate.m in Sources */,
 				DD7FB6701B0E76E100D9DC25 /* hello.xcdatamodeld in Sources */,
-				DD7FB6731B0E76E100D9DC25 /* ViewController.m in Sources */,
+				DD7FB6731B0E76E100D9DC25 /* MainController.m in Sources */,
 				DD7FB66A1B0E76E100D9DC25 /* main.m in Sources */,
+				DD7FB6951B0E806400D9DC25 /* Declarations.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +382,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = hello/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -361,6 +393,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = hello/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
