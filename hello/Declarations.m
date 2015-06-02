@@ -8,7 +8,14 @@
 
 #import "Declarations.h"
 
-NSMutableArray *maSmartplace;
+NSMutableArray *maTeams;
+League *mLeague;
+
+
+//-------------------------------------------------------------------------------
+//States
+unsigned int        mMenuState = 0;
+
 
 @implementation Declarations
 

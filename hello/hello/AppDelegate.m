@@ -109,18 +109,6 @@
     return _managedObjectContext;
 }
 
-- (void)transitionToViewController:(UIViewController *)viewController
-                    withTransition:(UIViewAnimationOptions)transition
-{
-    [UIView transitionFromView:self.window.rootViewController.view
-                        toView:viewController.view
-                      duration:0.65f
-                       options:transition
-                    completion:^(BOOL finished){
-                        self.window.rootViewController = viewController;
-                    }];
-}
-
 #pragma mark - Core Data Saving support
 
 - (void)saveContext {
